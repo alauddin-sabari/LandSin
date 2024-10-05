@@ -1,4 +1,6 @@
 # from django import db
+#./Documents/Patric/Deployment/AWS/heroku/price_radio_and_all._main.py
+
 from time import process_time_ns
 from dash import Dash, dcc, html, Input, Output
 import os
