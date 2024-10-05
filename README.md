@@ -2,7 +2,7 @@
 
 # LandSin
 
-![Project Logo](path/to/logo.png)  
+![Project Logo](interface.png)  
 ## Overview
 
 **LandSin** is a powerful application designed to to analyze land pricing and predicting a land value for a particular area and several statistical analysis about the land to make a decision weather the land could be affordable or habitable for you.
