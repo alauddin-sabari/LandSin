@@ -1,6 +1,5 @@
-Here’s a complete and professional `README.md` file for your repository, including sections for project description, installation, usage, contribution, license, and contact information:
 
-```markdown
+
 # LandSin
 
 ![Project Logo](path/to/logo.png)  
