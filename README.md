@@ -20,17 +20,17 @@
 
 ## Features
 
-- User-friendly interface for managing land data
-- [Feature 1: Describe a key feature of your application]
-- [Feature 2: Describe another feature]
-- [Feature 3: Describe yet another feature]
+- User-friendly interface for Analyzing  land data and getting insights about a particular land and its value for deciding weather you should buy or not.
+- Feature 1: Statistical price range and comparing price with existing real estate company
+- Feature 2: Predicting the price to buy and selling price estimation for lists of lands. 
+- Feature 3: getting the insights weather the land is flat and habitable via google map and feature of land like schooling rate for a particular are.  
 
 ## Technologies Used
 
 - **Programming Language**: Python
-- **Framework**: [  Flask, Dash]
+- **Framework**:  Flask, python plotly Dash
 
-- **Other Libraries**: List any significant libraries or tools used in the project (e.g., NumPy, Pandas, Matplotlib).
+- **Other Libraries**: scikit-learn, NumPy, Pandas, plotly 
 
 ## Getting Started
 
@@ -81,7 +81,7 @@ After installing the dependencies, you can run the application:
 
 ### Example Usage
 
-[Include an example of how to use the application, if applicable. You can also include code snippets, screenshots, or links to a demo.]
+ For a government or a real estate agency can heavily use it to deveop a particular area for making it habitable and any person also can avoid losing their money or pay overprice for an area.
 
 ## Contributing
 
