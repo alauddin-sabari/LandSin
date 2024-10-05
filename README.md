@@ -5,7 +5,7 @@
 ![Project Logo](interface.png)  
 ## Overview
 
-**LandSin** is a powerful application designed to to analyze land pricing and predicting a land value for a particular area and several statistical analysis about the land to make a decision weather the land could be affordable or habitable for you.
+**LandSin** is a powerful application designed to analyze land pricing and predict land value for a particular area and several statistical analysis about the land to make a decision weather the land could be affordable or habitable for you.
 
 ## Table of Contents
 
@@ -20,15 +20,15 @@
 
 ## Features
 
-- User-friendly interface for Analyzing  land data and getting insights about a particular land and its value for deciding weather you should buy or not.
+- User-friendly interface for Analyzing  land data and getting insights about a particular land and its value for deciding whether you should buy or not.
 - Feature 1: Statistical price range and comparing price with existing real estate company
-- Feature 2: Predicting the price to buy and selling price estimation for lists of lands. 
-- Feature 3: getting the insights weather the land is flat and habitable via google map and feature of land like schooling rate for a particular are.  
+- Feature 2: Predicting the price  to buy and also selling price estimation for lists through Statical Quartile price range and Machine Learning. 
+- Feature 3: getting insights into whether the land is flat and habitable via Google map and land features like schooling rate for a particular area.  
 
 ## Technologies Used
 
 - **Programming Language**: Python
-- **Framework**:  Flask, python plotly Dash
+- **Framework**:  Flask, python Plotly Dash
 
 - **Other Libraries**: scikit-learn, NumPy, Pandas, plotly 
 
