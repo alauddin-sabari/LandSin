@@ -1173,100 +1173,12 @@ def update_map_chart(arce_radio_input, acre_margin,price_range,  percent_value, 
 
 
 
-@app.callback(
-    Output('avg_radio', 'children'),
-    Output('avg_4_radio', 'children'),
-    Output('q1_radio', 'children'),
-    Output('q2_radio', 'children'),
-
-    
-    Input('acre-mark-radio', 'value'),
-    Input('acre-margin-slider', 'value'),
-    Input("price-slider1", "value") ,     
-
-    # Input("range-slider", "value"),
-    # Input("price-slider", "value"),
-    Input("percent-slider1", "value"),
-
-                                                                    
-    Input(component_id="map-plot1", component_property='selectedData')     # Extra input for drawing polygon.
-)
-                            
-# def average_finder(acr_range,price_range, percent_value, slct_data):
-def average_finder(arce_radio_input, acre_margin,price_range, percent_value, slct_data):
-
-    acr_range = acr_range_margin(arce_radio_input, acre_margin)
-    df1 = data_filter_by__slider(df, acr_range, price_range)
-    
-    if slct_data:                                                 
-        number_of_points = len(slct_data['points'])
-
-    if slct_data is  None or number_of_points==0 :
-        
-        
-        r = top_bar_price(df1, percent_value)
-        return r
-        
-        # return f'Average Price : ${int(avg)} \n  ||   targeted price (avg/4) : ${int(avg/4)}  [# Q1: ${Q1}   # Q3: ${Q3}]'
-
-    else:
-
-        # print('---\n data read func\n####################',df)
-       
-        
-        ls = []
-
-        ls_ad = []
-        for i in  range(number_of_points):
-            ls.append(slct_data['points'][i]['lon'])
-            ls_ad.append(slct_data['points'][i]['hovertext'])
-
-
-        df1= df[df['Price'].isin(ls)]
-        df1= df[df['Address'].isin(ls_ad)]
-        df1 = df1.dropna(subset=['Price'])
-        
-       
-        r = top_bar_price(df1,percent_value)
-        return r
+ 
 
 
 
 
-
-
-@app.callback(
-    Output('marginal-plot1', 'figure'),
-
-    Input('acre-mark-radio', 'value'),
-    Input('acre-margin-slider', 'value'),
-    Input("price-slider1", "value") ,  
-    )
-    
-def reggs(arce_radio_input, acre_margin, price_range):
-    low, high = 0,0
-
-    global df
-    global radio
-    if acre_margin:
-        low = float(arce_radio_input-acre_margin)
-        high = float(arce_radio_input+acre_margin)
-    if arce_radio_input ==200:
-        low = 0
-        high = 80
-    acr_range = [ low , high ]
-
-    df1 = data_filter_by__slider(df, acr_range, price_range)
-
-    len_df = len(df1)
-
-    if len_df > 0:
-        df1 =df1
-    else:
-        df1 = df
-    b = all_price_card.marginal_distribution_plot1(df1)
-    return b
-
+ 
 
  
 
